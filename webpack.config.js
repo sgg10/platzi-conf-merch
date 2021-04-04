@@ -7,6 +7,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
+		publicPath: "/",
 	},
 	resolve: {
 		extensions: [".js", ".jsx"],
@@ -63,5 +64,6 @@ module.exports = {
 		host: "0.0.0.0",
 		port: 3000,
 		open: true,
+		historyApiFallback: true,
 	},
 };
